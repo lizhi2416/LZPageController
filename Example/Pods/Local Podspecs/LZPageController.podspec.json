@@ -1,0 +1,22 @@
+{
+  "name": "LZPageController",
+  "version": "0.1.0",
+  "summary": "A short description of LZPageController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jlzgit/LZPageController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jlzgit": "275878610@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/jlzgit/LZPageController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LZPageController/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module Pods_LZPageController_Example {
+  umbrella header "Pods-LZPageController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

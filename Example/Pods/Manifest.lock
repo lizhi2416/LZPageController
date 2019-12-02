@@ -1,0 +1,16 @@
+PODS:
+  - LZPageController (0.1.0)
+
+DEPENDENCIES:
+  - LZPageController (from `../`)
+
+EXTERNAL SOURCES:
+  LZPageController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LZPageController: 57eabfae56a9eb5bcc084bb40cc11cd8be2337aa
+
+PODFILE CHECKSUM: 0fd3396da9da449fe86c09ddf771a0362dfef639
+
+COCOAPODS: 1.7.1

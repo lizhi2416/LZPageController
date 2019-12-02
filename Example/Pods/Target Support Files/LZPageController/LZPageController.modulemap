@@ -1,0 +1,6 @@
+framework module LZPageController {
+  umbrella header "LZPageController-umbrella.h"
+
+  export *
+  module * { export * }
+}
