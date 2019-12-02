@@ -27,3 +27,5 @@ jlzgit, 275878610@qq.com
 ## License
 
 LZPageController is available under the MIT license. See the LICENSE file for more info.
+
+主要是用swift重写了WMPageController库
