@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LZPageController_Example' do
+  pod 'LZPageController', :path => '../'
+
+  target 'LZPageController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
