@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LZPageController'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LZPageController.'
+  s.summary          = '本项目只是用swift重写了WMPageController库，方便小伙伴们集成使用'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,12 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/jlzgit/LZPageController'
+  s.homepage         = 'https://github.com/lizhi2416/LZPageController'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jlzgit' => '275878610@qq.com' }
   s.source           = { :git => 'https://github.com/jlzgit/LZPageController.git', :tag => s.version.to_s }
+  s.swift_version = '5.0'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

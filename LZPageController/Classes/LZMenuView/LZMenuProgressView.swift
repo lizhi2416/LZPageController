@@ -171,7 +171,7 @@ extension LZMenuProgressView {
             self.link?.invalidate()
         }
         let link = CADisplayLink.init(target: self, selector: #selector(progressChanged))
-        link.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
+        link.add(to: RunLoop.main, forMode: .common)
         self.link = link
     }
     

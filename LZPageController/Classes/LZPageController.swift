@@ -412,7 +412,7 @@ class LZPageController: UIViewController {
         posRecords.removeAll()
         // 如果收到内存警告次数小于 3，一段时间后切换到模式 Balanced
         if memoryWarningCount < 3 {
-            self.perform(#selector(lz_growCachePolicyAfterMemoryWarning), with: nil, afterDelay: 3.0, inModes: [RunLoopMode.commonModes])
+            self.perform(#selector(lz_growCachePolicyAfterMemoryWarning), with: nil, afterDelay: 3.0, inModes: [.common])
         }
     }
     
@@ -521,8 +521,8 @@ class LZPageController: UIViewController {
         
         for vc in displayVC.values {
             vc.view.removeFromSuperview()
-            vc.willMove(toParentViewController: nil)
-            vc.removeFromParentViewController()
+            vc.willMove(toParent: nil)
+            vc.removeFromParent()
         }
         
         memoryWarningCount = 0
@@ -697,9 +697,9 @@ class LZPageController: UIViewController {
     }
 
     func lz_addCachedViewController(_ viewController: UIViewController, atIndex index: Int) {
-        self.addChildViewController(viewController)
+        self.addChild(viewController)
         viewController.view.frame = childViewFrames[index]
-        viewController.didMove(toParentViewController: self)
+        viewController.didMove(toParent: self)
         scrollView?.addSubview(viewController.view)
         self.willEnterController(viewController, atIndex: index)
         displayVC[index] = viewController
@@ -716,13 +716,13 @@ class LZPageController: UIViewController {
                 }
             }
             
-            self.addChildViewController(viewController)
+            self.addChild(viewController)
             if index < childViewFrames.count {
                 viewController.view.frame = childViewFrames[index]
             }else {
                 viewController.view.frame = self.view.frame
             }
-            viewController.didMove(toParentViewController: self)
+            viewController.didMove(toParent: self)
             scrollView?.addSubview(viewController.view)
             self.willEnterController(viewController, atIndex: index)
             displayVC[index] = viewController
@@ -735,8 +735,8 @@ class LZPageController: UIViewController {
     func lz_removeViewController(_ viewController: UIViewController, atIndex index: Int) {
         self.lz_rememberPositionIfNeeded(controller: viewController, atIndex: index)
         viewController.view.removeFromSuperview()
-        viewController.willMove(toParentViewController: nil)
-        viewController.removeFromParentViewController()
+        viewController.willMove(toParent: nil)
+        viewController.removeFromParent()
         displayVC.removeValue(forKey: index)
         
         // 放入缓存
@@ -810,7 +810,7 @@ class LZPageController: UIViewController {
             if _selectIndex != 0 {
                 menuView.selectItemAtIndex(_selectIndex)
             }
-            self.getMenuSuperView().bringSubview(toFront: menuView)
+            self.getMenuSuperView().bringSubviewToFront(menuView)
         }else {
             self.lz_addMenuView()
         }
@@ -818,7 +818,7 @@ class LZPageController: UIViewController {
     
     @objc func lz_growCachePolicyAfterMemoryWarning() {
         cachePolicy = .balanced
-        self.perform(#selector(lz_growCachePolicyToHigh), with: nil, afterDelay: 2.0, inModes: [RunLoopMode.commonModes])
+        self.perform(#selector(lz_growCachePolicyToHigh), with: nil, afterDelay: 2.0, inModes: [.common])
     }
     
     @objc func lz_growCachePolicyToHigh() {

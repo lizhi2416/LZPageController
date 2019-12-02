@@ -126,7 +126,7 @@ extension LZMenuItem {
         }
         //link for show selected animation when animation is YES
         let displayLink = CADisplayLink(target: self, selector: #selector(rateChange))
-        displayLink.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
+        displayLink.add(to: RunLoop.main, forMode: .common)
         self.link = displayLink
     }
     

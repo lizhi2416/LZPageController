@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34BDA7172394BC3D00E1245E /* LZCustomizedPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BDA7162394BC3D00E1245E /* LZCustomizedPageController.swift */; };
 		5D09BA71CDC72AE413F30094 /* Pods_LZPageController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148295A7796B20B05C6D5F45 /* Pods_LZPageController_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,8 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11EC7479672052EE88ECD5E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		11EC7479672052EE88ECD5E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		148295A7796B20B05C6D5F45 /* Pods_LZPageController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZPageController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BDA7162394BC3D00E1245E /* LZCustomizedPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZCustomizedPageController.swift; sourceTree = "<group>"; };
 		575D524F400472914DE8046B /* Pods-LZPageController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZPageController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LZPageController_Tests/Pods-LZPageController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LZPageController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZPageController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,9 +46,9 @@
 		62984D4AFF5BAEC514D47CB7 /* Pods_LZPageController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZPageController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEA09B231582217EE5C49D4 /* Pods-LZPageController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZPageController_Example.release.xcconfig"; path = "Target Support Files/Pods-LZPageController_Example/Pods-LZPageController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B1D428D4C55490F614127372 /* Pods-LZPageController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZPageController_Tests.release.xcconfig"; path = "Target Support Files/Pods-LZPageController_Tests/Pods-LZPageController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B5E0A690B064054D85853DBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B5E0A690B064054D85853DBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E0C368A7177E0D9CE2F141E9 /* Pods-LZPageController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZPageController_Example.debug.xcconfig"; path = "Target Support Files/Pods-LZPageController_Example/Pods-LZPageController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E9E56783328B714D0FED446F /* LZPageController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LZPageController.podspec; path = ../LZPageController.podspec; sourceTree = "<group>"; };
+		E9E56783328B714D0FED446F /* LZPageController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LZPageController.podspec; path = ../LZPageController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				34BDA7162394BC3D00E1245E /* LZCustomizedPageController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -147,7 +150,6 @@
 				575D524F400472914DE8046B /* Pods-LZPageController_Tests.debug.xcconfig */,
 				B1D428D4C55490F614127372 /* Pods-LZPageController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = K54N85QB24;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = K54N85QB24;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +231,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -332,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				34BDA7172394BC3D00E1245E /* LZCustomizedPageController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,13 +484,14 @@
 			baseConfigurationReference = E0C368A7177E0D9CE2F141E9 /* Pods-LZPageController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K54N85QB24;
 				INFOPLIST_FILE = LZPageController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -493,13 +500,14 @@
 			baseConfigurationReference = 8BEA09B231582217EE5C49D4 /* Pods-LZPageController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K54N85QB24;
 				INFOPLIST_FILE = LZPageController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -507,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 575D524F400472914DE8046B /* Pods-LZPageController_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = K54N85QB24;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +538,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1D428D4C55490F614127372 /* Pods-LZPageController_Tests.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = K54N85QB24;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
